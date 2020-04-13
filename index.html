@@ -5,6 +5,7 @@
 	<title>CMS Home</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<!-- Navbar Begins -->
@@ -39,7 +40,7 @@
 				        <a class="nav-link" href="#">Admin</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Register</a>
+				        <span class="nav-link logged-user">--</span>
 				      </li>
 				      <!-- <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,48 +71,50 @@
 				<br>
 			</div>
 			<div class="col-lg-5">
-				<div class="container post-container">
-					<h4 class="text-primary font-weight-bold">
-						Post Number 1 Title For Demonstration of the CMS System
-					</h4>
-					<h5>by <span class="text-primary">Author</span></h5>
-					<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
-					<hr>
-					<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
-					<p class="mt-2">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
-					</p>
-					<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
-					<hr>
-				</div>
+				<div class="post-container-scroll">
+					<div class="container post-container">
+						<h4 class="text-primary font-weight-bold">
+							Post Number 1 Title For Demonstration of the CMS System
+						</h4>
+						<h5>by <span class="text-primary">Author</span></h5>
+						<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
+						<hr>
+						<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
+						</p>
+						<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
+						<hr>
+					</div>
 
-				<div class="container post-container">
-					<h4 class="text-primary font-weight-bold">
-						Post Number 2 Title For Demonstration of the CMS System
-					</h4>
-					<h5>by <span class="text-primary">Author</span></h5>
-					<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
-					<hr>
-					<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
-					<p class="mt-2">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
-					</p>
-					<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
-					<hr>
-				</div>
-				<div class="container post-container">
-					<h4 class="text-primary font-weight-bold">
-						Post Number 3 Title For Demonstration of the CMS System
-					</h4>
-					<h5>by <span class="text-primary">Author</span></h5>
-					<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
-					<hr>
-					<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
-					<p class="mt-2">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
-					</p>
-					<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
-					<hr>
+					<div class="container post-container">
+						<h4 class="text-primary font-weight-bold">
+							Post Number 2 Title For Demonstration of the CMS System
+						</h4>
+						<h5>by <span class="text-primary">Author</span></h5>
+						<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
+						<hr>
+						<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
+						</p>
+						<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
+						<hr>
+					</div>
+					<div class="container post-container">
+						<h4 class="text-primary font-weight-bold">
+							Post Number 3 Title For Demonstration of the CMS System
+						</h4>
+						<h5>by <span class="text-primary">Author</span></h5>
+						<small class="text-muted"> <span class="far fa-clock"></span> Posted on 2020-04-12</small>
+						<hr>
+						<img src="images/javascript-post.jpg" alt="post image" class="img-fluid">
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo doloribus nam nihil aperiam, voluptatum architecto maiores perferendis repellat nesciunt consequuntur.
+						</p>
+						<button type="button" class="btn btn-primary">Read More <span class="fas fa-angle-right"></span> </button>
+						<hr>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-3">
@@ -125,6 +128,56 @@
 									<span class="fas fa-search"></span>
 						    	</span>
 						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-light mt-3">
+					<div class="card-body">
+						<div class="input-group">
+							<input type="text" id="username" class="form-control" placeholder="Username" aria-label="username">
+						</div>
+						<div class="input-group mt-2">
+							<input type="password" id="password" class="form-control" placeholder="Password" aria-label="password">
+						    <div class="input-group-append">
+						    	<button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+						  	</div>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-light mt-3">
+					<div class="card-body">
+						<b>Categories</b>
+						<div class="text-primary mt-2">
+							<p class="m-0">PHP Modules</p>
+							<p class="m-0">CMS Modules</p>
+							<p class="m-0">Javascript Modules</p>
+							<p class="m-0">JQuery Modules</p>
+							<p class="m-0">SQL Modules</p>
+						</div>
+					</div>
+				</div>
+				<div class="card bg-light mt-3">
+					<div class="card-body">
+						<b>Recent Posts</b>
+						<div class="text-primary mt-2">
+							<p class="m-0">
+								PHP Modules
+								<img src="images/javascript-post.jpg" class="float-right" alt="Recent post image" width="50">	
+								<br>
+								<small class="text-muted"> By Author</small>
+							</p>
+							<p class="m-0">
+								Javascript Modules
+								<img src="images/javascript-post.jpg" class="float-right" alt="Recent post image" width="50">	
+								<br>
+								<small class="text-muted"> By Author</small>
+							</p>
+							<p class="m-0">
+								MySQL Modules
+								<img src="images/javascript-post.jpg" class="float-right" alt="Recent post image" width="50">	
+								<br>
+								<small class="text-muted"> By Author</small>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -142,5 +195,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
